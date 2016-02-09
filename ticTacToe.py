@@ -16,25 +16,25 @@ def printBoard(board):
 def checkWinner(board, player):    
     print('Checking if ' + player + ' is a winner...')
 #check vertical lines
-if board['top-L'] == ('X') or ('O') and board['top-M'] == ('X') or ('O') and board['top-R'] == ('X') or ('O'):
-    return True
-if board['mid-L'] == ('X') or ('O') and board['mid-M'] == ('X') or ('O') and board['mid-R'] == ('X') or ('O'):
-    return True
-if board['low-L'] == ('X') or ('O') and board['low-M'] == ('X') or ('O') and board['low-R'] == ('X') or ('O'):
-    return True
+    if board['top-L'] == ('X') or ('O') and board['top-M'] == ('X') or ('O') and board['top-R'] == ('X') or ('O'):
+            return True
+    if board['mid-L'] == ('X') or ('O') and board['mid-M'] == ('X') or ('O') and board['mid-R'] == ('X') or ('O'):
+            return True
+    if board['low-L'] == ('X') or ('O') and board['low-M'] == ('X') or ('O') and board['low-R'] == ('X') or ('O'):
+            return True
 #check horizontal lines
-if board['top-L'] == ('X') or ('O') and board['mid-L'] == ('X') or ('O') and board['low-L'] == ('X') or ('O'):
-    return True
-if board['top-M'] == ('X') or ('O') and board['mid-M'] == ('X') or ('O') and board['low-M'] == ('X') or ('O'):
-    return True
-if board['top-R'] == ('X') or ('O') and board['mid-R'] == ('X') or ('O') and board['low-R'] == ('X') or ('O'):
-    return True
+    if board['top-L'] == ('X') or ('O') and board['mid-L'] == ('X') or ('O') and board['low-L'] == ('X') or ('O'):
+            return True
+    if board['top-M'] == ('X') or ('O') and board['mid-M'] == ('X') or ('O') and board['low-M'] == ('X') or ('O'):
+            return True
+    if board['top-R'] == ('X') or ('O') and board['mid-R'] == ('X') or ('O') and board['low-R'] == ('X') or ('O'):
+            return True
 #check diagonal(to right)
-if board['top-L'] == ('X') or ('O') and board['mid-M'] == ('X') or ('O') and board['low-R'] == ('X') or ('O'):
-    return True
+    if board['top-L'] == ('X') or ('O') and board['mid-M'] == ('X') or ('O') and board['low-R'] == ('X') or ('O'):
+            return True
 #check diagonal(to left)
-if board['top-R'] == ('X') or ('O') and board['mid-M'] == ('X') or ('O') and board['low-L'] == ('X') or ('O'):
-    return True
+    if board['top-R'] == ('X') or ('O') and board['mid-M'] == ('X') or ('O') and board['low-L'] == ('X') or ('O'):
+            return True
     
     # TO DO #################################################################
     # Write code in this function that checks the tic-tac-toe board          #
