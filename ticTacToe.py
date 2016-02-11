@@ -16,24 +16,24 @@ def printBoard(board):
 def checkWinner(board, player):    
     print('Checking if ' + player + ' is a winner...')
 #check vertical lines
-    if board['top-L'] == ('X') or ('O') and board['top-M'] == ('X') or ('O') and board['top-R'] == ('X') or ('O'):
+    if board['top-L'] == ('player') and board['top-M'] == ('player') and board['top-R'] == ('player'):
             return True
-    if board['mid-L'] == ('X') or ('O') and board['mid-M'] == ('X') or ('O') and board['mid-R'] == ('X') or ('O'):
+    if board['mid-L'] == ('player') and board['mid-M'] == ('player') and board['mid-R'] == ('player'):
             return True
-    if board['low-L'] == ('X') or ('O') and board['low-M'] == ('X') or ('O') and board['low-R'] == ('X') or ('O'):
+    if board['low-L'] == ('player') and board['low-M'] == ('player') and board['low-R'] == ('player'):
             return True
 #check horizontal lines
-    if board['top-L'] == ('X') or ('O') and board['mid-L'] == ('X') or ('O') and board['low-L'] == ('X') or ('O'):
+    if board['top-L'] == ('player') and board['mid-L'] == ('player') and board['low-L'] == ('player'):
             return True
-    if board['top-M'] == ('X') or ('O') and board['mid-M'] == ('X') or ('O') and board['low-M'] == ('X') or ('O'):
+    if board['top-M'] == ('player') and board['mid-M'] == ('player') and board['low-M'] == ('player'):
             return True
-    if board['top-R'] == ('X') or ('O') and board['mid-R'] == ('X') or ('O') and board['low-R'] == ('X') or ('O'):
+    if board['top-R'] == ('player') and board['mid-R'] == ('player') and board['low-R'] == ('player'):
             return True
 #check diagonal(to right)
-    if board['top-L'] == ('X') or ('O') and board['mid-M'] == ('X') or ('O') and board['low-R'] == ('X') or ('O'):
+    if board['top-L'] == ('player') and board['mid-M'] == ('player') and board['low-R'] == ('player'):
             return True
 #check diagonal(to left)
-    if board['top-R'] == ('X') or ('O') and board['mid-M'] == ('X') or ('O') and board['low-L'] == ('X') or ('O'):
+    if board['top-R'] == ('player') and board['mid-M'] == ('player') and board['low-L'] == ('player'):
             return True
     
     # TO DO #################################################################
