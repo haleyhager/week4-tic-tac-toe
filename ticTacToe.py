@@ -16,7 +16,7 @@ def printBoard(board):
 def checkWinner(board, player):    
     print('Checking if ' + player + ' is a winner...')
     
-    player = ('X', 'O')
+    player == ('X', 'O')
 #check vertical lines
     if board['top-L'] == ('player') and board['top-M'] == ('player') and board['top-R'] == ('player'):
             return True
