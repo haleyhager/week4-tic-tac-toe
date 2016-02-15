@@ -15,6 +15,8 @@ def printBoard(board):
 
 def checkWinner(board, player):    
     print('Checking if ' + player + ' is a winner...')
+    
+    player = ('X', 'O')
 #check vertical lines
     if board['top-L'] == ('player') and board['top-M'] == ('player') and board['top-R'] == ('player'):
             return True
@@ -35,6 +37,8 @@ def checkWinner(board, player):
 #check diagonal(to left)
     if board['top-R'] == ('player') and board['mid-M'] == ('player') and board['low-L'] == ('player'):
             return True
+    else:
+            return False
     
     # TO DO #################################################################
     # Write code in this function that checks the tic-tac-toe board          #
