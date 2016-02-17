@@ -18,24 +18,24 @@ def checkWinner(board, player):
     
     player == ('X', 'O')
 #check vertical lines
-    if board['top-L'] == ('player') and board['top-M'] == ('player') and board['top-R'] == ('player'):
+    if board['top-L'] == (player) and board['top-M'] == (player) and board['top-R'] == (player):
             return True
-    if board['mid-L'] == ('player') and board['mid-M'] == ('player') and board['mid-R'] == ('player'):
+    if board['mid-L'] == (player) and board['mid-M'] == (player) and board['mid-R'] == (player):
             return True
-    if board['low-L'] == ('player') and board['low-M'] == ('player') and board['low-R'] == ('player'):
+    if board['low-L'] == (player) and board['low-M'] == (player) and board['low-R'] == (player):
             return True
 #check horizontal lines
-    if board['top-L'] == ('player') and board['mid-L'] == ('player') and board['low-L'] == ('player'):
+    if board['top-L'] == (player) and board['mid-L'] == (player) and board['low-L'] == (player):
             return True
-    if board['top-M'] == ('player') and board['mid-M'] == ('player') and board['low-M'] == ('player'):
+    if board['top-M'] == (player) and board['mid-M'] == (player) and board['low-M'] == (player):
             return True
-    if board['top-R'] == ('player') and board['mid-R'] == ('player') and board['low-R'] == ('player'):
+    if board['top-R'] == (player) and board['mid-R'] == (player) and board['low-R'] == (player):
             return True
 #check diagonal(to right)
-    if board['top-L'] == ('player') and board['mid-M'] == ('player') and board['low-R'] == ('player'):
+    if board['top-L'] == (player) and board['mid-M'] == (player) and board['low-R'] == (player):
             return True
 #check diagonal(to left)
-    if board['top-R'] == ('player') and board['mid-M'] == ('player') and board['low-L'] == ('player'):
+    if board['top-R'] == (player) and board['mid-M'] == (player) and board['low-L'] == (player):
             return True
     else:
             return False
